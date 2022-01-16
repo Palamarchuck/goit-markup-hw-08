@@ -6,8 +6,9 @@
   --main-background-color: #e5e5e5;
   --second-background-color: #2f303a;
   --third-background-color: #f5f4fa;
-  --transition-hover: color background-color box-shadow 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: "Roboto", "sans-serif";
@@ -146,7 +147,19 @@ img {
 }
 .current {
   color: var(--accent-color);
+  position: relative;
 }
+.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: -32px;
+}
+
 .contact-list {
   margin-left: auto;
   display: flex;
@@ -271,11 +284,8 @@ img {
   margin-left: 30px;
   position: relative;
 }
-/* /* .about-image {
-  position: relative;
-} */
+
 .about-item-title {
-  position: absolute;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.72;
@@ -286,6 +296,9 @@ img {
   padding-top: 27px;
   padding-bottom: 27px;
   background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
 }
 /* ----------Наша команда---------- */
 .team {
@@ -544,7 +557,33 @@ footer {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  position: relative;
   transition: var(--transition-hover);
+}
+.projecrs-item:hover .project-item-text {
+  transform: translateY(0);
+}
+
+.projecrs-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.project-item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--second-title-text-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* overflow: auto; */
 }
 .projecrs-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -570,4 +609,57 @@ footer {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms, visibility 500ms;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.4);
+  transition: transform 250ms;
+}
+.close-icon {
+  fill: #000000;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--second-title-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  transition: ttransform 700ms;
+}
+.modal-close {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.close-icon {
+  fill: #000000;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
