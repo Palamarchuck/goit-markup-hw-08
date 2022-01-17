@@ -157,7 +157,7 @@ img {
   position: absolute;
   background-color: var(--accent-color);
   left: 0;
-  bottom: -32px;
+  bottom: -33px;
 }
 
 .contact-list {
@@ -366,10 +366,14 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: var(--second-title-text-color);
+
   transition: var(--transition-hover);
 }
 .team-social-icon {
   fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------CLIENTS---------- */
@@ -402,14 +406,17 @@ img {
   align-items: center;
   min-width: 170px;
   min-height: 92px;
-  transition: var(--transition-hover);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--accent-color);
+  border-width: 2px;
 }
 .clients-item:hover .team-social-icon,
 .clients-item:focus .team-social-icon {
