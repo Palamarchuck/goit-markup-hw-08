@@ -157,7 +157,7 @@ img {
   position: absolute;
   background-color: var(--accent-color);
   left: 0;
-  bottom: -33px;
+  bottom: -34px;
 }
 
 .contact-list {
@@ -476,6 +476,7 @@ footer {
 }
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 .container-social-link {
   margin-left: 70px;
@@ -489,7 +490,6 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-text-color);
-  padding-top: 12px;
   margin-bottom: 20px;
 }
 .footer-social-list {
