@@ -421,9 +421,21 @@
                     </ul>
                 </section>
             </div>
+            <div class="container-online">
+                <section class="online">
+                    <h3 class="online-title">Подпишитесь на рассылку</h3>
+                    <form action="#" class="online-form">
+                        <div class="online-inputs">                       
+                            <input type="email" name="online-mail" placeholder="E-mail" class="online-input">
+                            <button type="submit" class="online-button">Подписаться</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
         </div>    
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- < class="backdrop is-hidden" data-modal> -->
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="close-icon" width="10" height="16">
@@ -431,6 +443,30 @@
                     </use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#">
+                <div class="form-field">
+                    <label class="input-text" for="user-name">Имя</label>
+                    <input type="text" class="form-input" name="user-name" placeholder=" " required minlength="2" id="user-name">
+                </div>
+                <div class="form-field">
+                    <label class="input-text" for="user-email">Телефон</label>
+                    <input type="tel" class="form-input" name="user-tel" placeholder="Телефон" required id="user-tel" value="+380">
+                </div>
+                <div class="form-field">
+                    <label class="input-text" for="user-tel">Почта</label>
+                    <input type="email" class="form-input" name="user-email" placeholder="Почта" required id="user-email" >
+                </div>
+                <div class="form-field">
+                    <label class="input-text" for="user-text">Комментарий</label>
+                    <textarea name="user-text" id="user-text" class="form-text" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="form-field">
+                    <input type="tel" class="policy" name="policy" id="policy-check">
+                    <label class="checkbox" for="policy">Комментарий</label>
+                </div>
+                <button type="submit" class="form-button">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js">
