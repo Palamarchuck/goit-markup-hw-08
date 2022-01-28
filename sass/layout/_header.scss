@@ -1,0 +1,110 @@
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.header-tel:hover .header-contact-icon,
+.header-tel:focus .header-contact-icon {
+  fill: var(--accent-color);
+}
+.header-mail:hover .header-contact-icon,
+.header-mail:focus .header-contact-icon {
+  fill: var(--accent-color);
+}
+
+.header-tel,
+.header-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-hover);
+}
+
+.header-contact-icon {
+  fill: var(--title-text-color);
+  margin-right: 10px;
+}
+.header {
+  background-color: var(--second-title-text-color);
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.header-logo {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--header-text-color);
+  text-decoration: none;
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.logo-first {
+  color: var(--accent-color);
+}
+.header-list {
+  font-weight: 500;
+  line-height: 1.14;
+  vertical-align: top;
+  letter-spacing: 0.02em;
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-mail {
+  margin-right: 50px;
+}
+.header-link {
+  color: var(--header-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  transition: var(--transition-hover);
+}
+.current {
+  color: var(--accent-color);
+  position: relative;
+}
+.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: -34px;
+}
+
+.contact-list {
+  margin-left: auto;
+  display: flex;
+}
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}

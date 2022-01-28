@@ -1,0 +1,33 @@
+.methods-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.methods-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+.methods-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: left;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.methods-after-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  text-align: left;
+  color: var(--title-text-color);
+}
+.method-item-container {
+  min-width: 270px;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-background-color);
+  margin-bottom: 30px;
+}

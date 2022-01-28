@@ -1,0 +1,55 @@
+footer {
+  background-color: var(--second-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  display: inline-block;
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--second-title-text-color);
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.adress-first {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.72;
+  text-align: center;
+  color: var(--second-title-text-color);
+  display: inline-block;
+  margin-bottom: 9px;
+  transition: var(--transition-hover);
+}
+
+.adress-mail {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.72;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-bottom: 9px;
+  transition: var(--transition-hover);
+}
+.adress-mail:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.adress-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.72;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  transition: var(--transition-hover);
+}
+.adress-tel:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
