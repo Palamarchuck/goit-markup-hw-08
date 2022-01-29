@@ -45,10 +45,10 @@
 .close-icon {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.close-icon:focus,
-.close-icon:hover {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .is-hidden {
@@ -87,10 +87,11 @@
   padding-left: 42px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
-.form-input:focus {
-  border-color: var(--accent-color);
-}
+
 .form-input:focus + .input-icon {
   fill: var(--accent-color);
 }
@@ -112,11 +113,11 @@
   resize: none;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
-.form-text:focus {
-  border-color: var(--accent-color);
-}
-.form-button {
+.form-text .form-button {
   display: flex;
   cursor: pointer;
   font-weight: 700;

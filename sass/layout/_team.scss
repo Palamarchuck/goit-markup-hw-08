@@ -48,14 +48,7 @@
 .team-social-item + .team-social-item {
   margin-left: 10px;
 }
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
-  fill: var(--second-title-text-color);
-}
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--accent-color);
-}
+
 .team-social-link {
   width: 44px;
   height: 44px;
@@ -66,9 +59,18 @@
   background-color: var(--second-title-text-color);
 
   transition: var(--transition-hover);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .team-social-icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .team-social-link:hover &,
+  .team-social-link:focus & {
+    fill: var(--second-title-text-color);
+  }
 }

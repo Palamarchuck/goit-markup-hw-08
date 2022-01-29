@@ -34,9 +34,9 @@ footer {
   display: inline-block;
   margin-bottom: 9px;
   transition: var(--transition-hover);
-}
-.adress-mail:hover {
-  color: rgba(255, 255, 255, 1);
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
 }
 .adress-tel {
   font-style: normal;
@@ -45,10 +45,11 @@ footer {
   text-align: left;
   color: rgba(255, 255, 255, 0.6);
   transition: var(--transition-hover);
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
 }
-.adress-tel:hover {
-  color: rgba(255, 255, 255, 1);
-}
+
 .container-footer {
   display: flex;
   align-items: baseline;

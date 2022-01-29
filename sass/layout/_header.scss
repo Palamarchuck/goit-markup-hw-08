@@ -1,22 +1,6 @@
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
-}
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
-}
-.header-tel:hover .header-contact-icon,
-.header-tel:focus .header-contact-icon {
-  fill: var(--accent-color);
-}
-.header-mail:hover .header-contact-icon,
-.header-mail:focus .header-contact-icon {
-  fill: var(--accent-color);
 }
 
 .header-tel,
@@ -30,6 +14,14 @@
 .header-contact-icon {
   fill: var(--title-text-color);
   margin-right: 10px;
+  .header-mail:hover &,
+  .header-mail:focus & {
+    fill: var(--accent-color);
+  }
+  .header-tel:hover &,
+  .header-tel:focus & {
+    fill: var(--accent-color);
+  }
 }
 .header {
   background-color: var(--second-title-text-color);
@@ -72,6 +64,10 @@
 }
 .header-mail {
   margin-right: 50px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .header-link {
   color: var(--header-text-color);
@@ -81,6 +77,10 @@
   letter-spacing: 0.02em;
   padding-top: 32px;
   transition: var(--transition-hover);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .current {
   color: var(--accent-color);

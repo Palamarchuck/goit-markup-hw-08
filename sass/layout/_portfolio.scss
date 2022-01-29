@@ -1,10 +1,3 @@
-.filter-btn:hover,
-.filter-btn:focus {
-  color: var(--second-title-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +21,14 @@
   border: none;
   padding: 6px 22px;
   transition: var(--transition-hover);
+
+  &:hover,
+  &:focus {
+    color: var(--second-title-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 .filter-btn-first {
   background-color: var(--accent-color);
@@ -46,9 +47,10 @@
   margin-bottom: 30px;
   position: relative;
   transition: var(--transition-hover);
-}
-.projecrs-item:hover .project-item-text {
-  transform: translateY(0);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .projecrs-item-wrap {
@@ -70,12 +72,11 @@
   height: 100%;
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* overflow: auto; */
+  .projecrs-item:hover & {
+    transform: translateY(0);
+  }
 }
-.projecrs-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .projects-title {
   font-weight: 700;
   font-size: 18px;
