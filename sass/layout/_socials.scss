@@ -1,7 +1,7 @@
 .container-social-link {
   margin-left: 70px;
 }
-.footer-social-link-title {
+.footer-social__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -12,14 +12,14 @@
   color: var(--second-title-text-color);
   margin-bottom: 20px;
 }
-.footer-social-list {
+.footer-social__list {
   display: flex;
 }
-.footer-social-item + .footer-social-item {
+.footer-social__item + .footer-social__item {
   margin-left: 10px;
 }
 
-.footer-social-link {
+.footer-social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -33,6 +33,6 @@
     background-color: var(--accent-color);
   }
 }
-.footer-social-icon {
+.footer-social__icon {
   fill: var(--second-title-text-color);
 }

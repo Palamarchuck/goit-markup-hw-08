@@ -4,25 +4,25 @@
   margin-left: -30px;
   margin-bottom: -30px;
 }
-.methods-item {
+.methods-list__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
-.methods-title {
+.methods__title {
   font-weight: 700;
   line-height: 1.14;
   text-align: left;
   vertical-align: top;
   margin-bottom: 10px;
 }
-.methods-after-title {
+.methods__after-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
   text-align: left;
   color: var(--title-text-color);
 }
-.method-item-container {
+.methods__item-container {
   min-width: 270px;
   min-height: 120px;
   display: flex;
@@ -30,4 +30,9 @@
   align-items: center;
   background-color: var(--third-background-color);
   margin-bottom: 30px;
+}
+.methods-list__icon {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }

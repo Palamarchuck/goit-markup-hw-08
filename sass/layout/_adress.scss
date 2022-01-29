@@ -3,7 +3,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
+.footer__logo {
   display: inline-block;
   font-family: raleway;
   font-weight: 700;
@@ -14,7 +14,10 @@ footer {
   text-decoration: none;
   margin-bottom: 20px;
 }
-.adress-first {
+.footer__logo-first {
+  color: var(--accent-color);
+}
+.adress__item-first {
   font-style: normal;
   font-size: 14px;
   line-height: 1.72;
@@ -25,7 +28,7 @@ footer {
   transition: var(--transition-hover);
 }
 
-.adress-mail {
+.adress__item-mail {
   font-style: normal;
   font-size: 14px;
   line-height: 1.72;
@@ -38,7 +41,7 @@ footer {
     color: rgba(255, 255, 255, 1);
   }
 }
-.adress-tel {
+.adress__item-tel {
   font-style: normal;
   font-size: 14px;
   line-height: 1.72;

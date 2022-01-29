@@ -1,25 +1,25 @@
-.header-tel:hover,
-.header-tel:focus {
+.contact-list__tel:hover,
+.contact-list__tel:focus {
   color: var(--accent-color);
 }
 
-.header-tel,
-.header-mail {
+.contact-list__tel,
+.contact-list__mail {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: var(--transition-hover);
 }
 
-.header-contact-icon {
+.contact-list__icon {
   fill: var(--title-text-color);
   margin-right: 10px;
-  .header-mail:hover &,
-  .header-mail:focus & {
+  .contact-list__mail:hover &,
+  .contact-list__mail:focus & {
     fill: var(--accent-color);
   }
-  .header-tel:hover &,
-  .header-tel:focus & {
+  .contact-list__tel:hover &,
+  .contact-list__tel:focus & {
     fill: var(--accent-color);
   }
 }
@@ -38,7 +38,7 @@
 .link {
   text-decoration: none;
 }
-.header-logo {
+.header__logo {
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
@@ -49,27 +49,27 @@
   margin-top: 24px;
   margin-bottom: 25px;
 }
-.logo-first {
+.header__logo-first {
   color: var(--accent-color);
 }
-.header-list {
+.header__list {
   font-weight: 500;
   line-height: 1.14;
   vertical-align: top;
   letter-spacing: 0.02em;
   display: flex;
 }
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
-.header-mail {
+.contact-list__mail {
   margin-right: 50px;
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-.header-link {
+.header__link {
   color: var(--header-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -101,8 +101,8 @@
   margin-left: auto;
   display: flex;
 }
-.header-mail,
-.header-tel {
+.contact-list__mail,
+.contact-list__tel {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;

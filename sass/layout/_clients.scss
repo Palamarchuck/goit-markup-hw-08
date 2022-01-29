@@ -1,6 +1,6 @@
 .clients {
 }
-.clients-pre-title {
+.clients__pre-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -14,7 +14,7 @@
   margin-left: -30px;
   margin-bottom: -30px;
 }
-.clients-item {
+.clients-list__item {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
   background-color: var(--second-title-text-color);
@@ -35,11 +35,11 @@
     border-width: 2px;
   }
 }
-.team-social-icon {
+.clients-list__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .clients-item:hover &,
-  .clients-item:focus & {
+  .clients-list__item:hover &,
+  .clients-list__item:focus & {
     fill: var(--accent-color);
   }
 }

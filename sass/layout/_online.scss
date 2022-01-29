@@ -1,7 +1,7 @@
 .container-online {
   margin-left: 93px;
 }
-.online-title {
+.online__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -12,7 +12,7 @@
   color: var(--second-title-text-color);
   margin-bottom: 20px;
 }
-.online-input {
+.online__mail-input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -34,13 +34,13 @@
   }
 }
 
-.online-inputs {
+.online__inputs {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.online-button {
+.online__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@
     background-color: #188ce8;
   }
 }
-.online-inputs-icon {
+.online__button-icon {
   display: flex;
   justify-content: center;
   align-items: center;

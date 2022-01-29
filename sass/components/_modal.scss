@@ -10,9 +10,6 @@
   transform: scale(0.4);
   transition: transform 250ms;
 }
-/* .close-icon {
-  fill: #000000;
-} */
 
 .modal {
   width: 528px;
@@ -28,7 +25,7 @@
   transition: ttransform 700ms;
   padding: 40px;
 }
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   background: #ffffff;
@@ -42,7 +39,7 @@
   top: 8px;
   right: 8px;
 }
-.close-icon {
+.modal__close-icon {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -56,7 +53,7 @@
   pointer-events: none;
   visibility: hidden;
 }
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -66,19 +63,22 @@
 .form-field {
   margin-bottom: 10px;
 }
-.input-icon {
+.form-field__input-icon {
   fill: var(--header-text-color);
   position: absolute;
   left: 9px;
   top: 50%;
   transform: translateY(-50%);
   fill: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
-.input-wrap {
+.form-field__wrap {
   position: relative;
 }
 
-.form-input {
+.form-field__input {
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -92,10 +92,10 @@
   }
 }
 
-.form-input:focus + .input-icon {
+.form-field__input:focus + .form-field__input-icon {
   fill: var(--accent-color);
 }
-.input-text {
+.form-field__text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -103,7 +103,7 @@
   display: block;
   margin-bottom: 4px;
 }
-.form-text {
+.form-field__form-text {
   height: 120px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -117,7 +117,7 @@
     border-color: var(--accent-color);
   }
 }
-.form-text .form-button {
+.form-field__form-button {
   display: flex;
   cursor: pointer;
   font-weight: 700;
@@ -137,7 +137,7 @@
   margin-right: auto;
   transition: var(--transition-hover);
 }
-.check-text {
+.form-field__check-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -145,10 +145,10 @@
   display: flex;
   align-items: center;
 }
-.check-link {
+.form-field__check-link {
   color: var(--accent-color);
 }
-.check-text span {
+.form-field__check-text span {
   width: 16px;
   height: 15px;
   background: #ffffff;
@@ -163,10 +163,10 @@
 .policy-icon {
   fill: transparent;
 }
-.policy-check:checked + .check-text span {
+.policy-check:checked + .form-field__check-text span {
   border: none;
   background-color: var(--accent-color);
 }
-.policy-check:checked + .check-text .policy-icon {
+.policy-check:checked + .form-field__check-text .policy-icon {
   fill: var(--second-title-text-color);
 }
