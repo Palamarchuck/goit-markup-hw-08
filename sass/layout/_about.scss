@@ -1,5 +1,12 @@
 .about {
   padding-top: 0px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+}
 }
 .about__title {
   font-weight: 700;
