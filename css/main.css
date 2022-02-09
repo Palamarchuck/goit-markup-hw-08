@@ -101,11 +101,18 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 500ms, visibility 500ms;
   transition: opacity 500ms, visibility 500ms;
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -118,8 +125,8 @@ img {
 }
 
 .modal {
-  width: 370px;
-  min-height: 609px;
+  width: 100%;
+  min-height: 100%;
   background-color: var(--second-title-text-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -132,6 +139,20 @@ img {
   -webkit-transition: ttransform 700ms;
   transition: ttransform 700ms;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -475,6 +496,7 @@ img {
 
 .contact-list__mail {
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .contact-list__mail:hover, .contact-list__mail:focus {
@@ -838,9 +860,21 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-text-color);
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1065,6 +1099,7 @@ img {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1624,6 +1659,7 @@ footer {
 
 .filter__list {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter__btn {
